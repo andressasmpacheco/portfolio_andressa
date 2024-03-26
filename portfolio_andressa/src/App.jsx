@@ -1,26 +1,47 @@
-import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import {Navigation, Pagination} from 'swiper/modules'
+import livros from '../src/assets/livros.jpg'
+import dois from '../src/assets/dois.jpg'
+import tres from '../src/assets/tres.jpg'
+import quatro from '../src/assets/quatro.jpg'
 import './App.css'
 
 function App() {
 
+const slides = [livros, dois, tres, quatro];
+
   return (
-    <main>
+  
     <>
       <header className='cabecalho'>
         <div className='logo'>
-          <img src='./Screenshot_2024-03-25_1.27.54_PM-removebg-preview.svg'/> 
+          <img className='logoImage' src='./src/assets/logo.jpg'/> 
         </div>
       </header>
-   
-      <div >
-        
-      <h1>Andressa Simões - Sistemas</h1>
+
+      <div className='slider' >
+        <Swiper
+        modules={[Navigation, Pagination]}
+        navigation
+        pagination
+        loop
+        >
+          {slides.map(slides =>(
+            <SwiperSlide>
+                <img src={slides} alt={slides}></img>
+            </SwiperSlide>
+
+          ))}
+
+        </Swiper>
+        <div> 
+         <a className='botao' href='https://wa.me/5511962556392'>Entre em contato</a>
       </div>
-   
+      </div>
+     
+      
     </>
-    </main>
+
   )
 }
 
