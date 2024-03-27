@@ -15,7 +15,13 @@ const slides = [livros, dois, tres, quatro];
     <>
       <header className='cabecalho'>
         <div className='logo'>
-          <img className='logoImage' src='./src/assets/logo.jpg'/> 
+          <img className='logoImage' src='./src/assets/logo2.jpg'/> 
+          <div className='cabecalho_links'>
+          <a>Sobre mim</a>
+          <a>Estudos</a>
+          <a>Certificações DEV</a>
+          <a>Contatos</a>
+          </div>
         </div>
       </header>
 
