@@ -6,6 +6,7 @@ import tres from '../../assets/tres.jpg'
 import quatro from '../../assets/quatro.jpg'
 import logo2 from '../../assets/logo2.jpg'
 import '../../App.css'
+import {Link} from 'react-router-dom'
 
 function Home() {
 
@@ -16,13 +17,14 @@ const slides = [livros, dois, tres, quatro];
     <>
       <header className='cabecalho'>
         <div className='logo'>
-          <img className='logoImage' src={logo2}/> 
+          <Link to="/"> <img className='logoImage' src={logo2}/></Link>
+          
           <div className='cabecalho_links'>
-          <a>Página Inicial</a>
-          <a>Sobre mim</a>
-          <a>Estudos</a>
-          <a>Certificações DEV</a>
-          <a>Contatos</a>
+          <Link to="/">Página Inicial</Link>
+          <Link to="/SobreMim">Sobre mim</Link>
+          <Link to="/Estudos">Estudos</Link>
+          <Link to="/Certificacoes">Certificações DEV</Link>
+          <Link to="/Contatos">Contatos</Link>
           </div>
         </div>
       </header>
