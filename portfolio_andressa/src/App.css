@@ -6,16 +6,15 @@
   width: 100vw;
 }
 .cabecalho_links{
-padding: 4vw;
-min-width: 250px;
+padding: 3.2vw;
+min-width: 200px;
 display: inline-block;
 vertical-align: top;
 
 }
 
 a{
-
-  margin: 0 6vw;
+  margin: 0 4vw;
 }
 
 .slider{
@@ -25,13 +24,13 @@ height: 25px;
 
 }
 .logoImage{
-  width: 200px;
-  height: 130px;
+  width: 150px;
+  height: 100px;
  /* padding: 5px;*/
   /*min-width: 250px;*/
   display: inline-block;
   vertical-align: top;
-  margin: 5px 0 0 5px;
+  margin: 10px 0 0 10px;
 }
 
 img{
