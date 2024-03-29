@@ -1,12 +1,23 @@
-import '../../App.css'
+//import '../../App.css'
+import Header from '../../components/Header';
 import '../Certificacoes/certificacoes.module.css'
-//import Header from '../../components/Header'
+import Botao from '../../components/Botao';
+
 function Certificacoes(){
     return(
            
-            <section className={styles.certificacoes}>
             
-            </section>
+        <section>
+        <div>
+        <Header/>
+         </div>
+ 
+        <div>
+        <Botao/>
+         </div>
+
+         </section>
+         
             
     );
 }

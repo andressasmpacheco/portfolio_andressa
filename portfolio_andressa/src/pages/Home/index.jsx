@@ -19,7 +19,7 @@ const slides = [livros, dois, tres, quatro];
   
     <>
     <Header></Header>
-      <div className={styles.slider} >
+      <div className={styles.sliders} >
         <Swiper
         modules={[Navigation, Pagination]}
         navigation
@@ -28,7 +28,7 @@ const slides = [livros, dois, tres, quatro];
         >
           {slides.map(slides =>(
             <SwiperSlide>
-                <img className={slides.imgSlides} src={slides} alt={slides}></img>
+                <img  src={slides} alt={slides}></img>
             </SwiperSlide>
 
           ))}
