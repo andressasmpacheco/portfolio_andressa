@@ -4,9 +4,12 @@ import livros from '../../assets/livros.jpg'
 import dois from '../../assets/dois.jpg'
 import tres from '../../assets/tres.jpg'
 import quatro from '../../assets/quatro.jpg'
-import logo2 from '../../assets/logo2.jpg'
-import '../../App.css'
-import {Link} from 'react-router-dom'
+//import logo2 from '../../assets/logo2.jpg'
+//import '../../App.css'
+//import {Link} from 'react-router-dom'
+import styles from '../Home/Home.module.css'
+import Header from '../../components/Header'
+import Botao from '../../components/Botao'
 
 function Home() {
 
@@ -15,21 +18,8 @@ const slides = [livros, dois, tres, quatro];
   return (
   
     <>
-      <header className='cabecalho'>
-        <div className='logo'>
-          <Link to="/"> <img className='logoImage' src={logo2}/></Link>
-          
-          <div className='cabecalho_links'>
-          <Link to="/">Página Inicial</Link>
-          <Link to="/SobreMim">Sobre mim</Link>
-          <Link to="/Estudos">Estudos</Link>
-          <Link to="/Certificacoes">Certificações DEV</Link>
-          <Link to="/Contatos">Contatos</Link>
-          </div>
-        </div>
-      </header>
-
-      <div className='slider' >
+    <Header></Header>
+      <div className={styles.slider} >
         <Swiper
         modules={[Navigation, Pagination]}
         navigation
@@ -38,15 +28,15 @@ const slides = [livros, dois, tres, quatro];
         >
           {slides.map(slides =>(
             <SwiperSlide>
-                <img src={slides} alt={slides}></img>
+                <img className={slides.imgSlides} src={slides} alt={slides}></img>
             </SwiperSlide>
 
           ))}
 
         </Swiper>
         <div> 
-         <a className='botao' href='https://wa.me/5511962556392'>Entre em contato</a>
-      </div>
+              <Botao/>
+        </div>
       </div>
      
       

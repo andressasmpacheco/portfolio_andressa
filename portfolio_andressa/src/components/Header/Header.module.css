@@ -1,0 +1,33 @@
+.Header{
+    border-bottom: 10px solid #252525;
+    width: 100vw;
+  }
+  .cabecalho_links{
+  padding: 2.5vw;
+  min-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  
+  }
+  
+  a{
+    margin: 0 3vw;
+    text-decoration: none;
+    color:#252525;
+    
+  }
+   a:hover{
+    color: rgba(159, 149, 149, 0.764);
+  }
+  
+  
+.logoImage{
+    width: 150px;
+    height: 100px;
+   /* padding: 5px;*/
+    /*min-width: 250px;*/
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0 0 10px;
+  }
+  
