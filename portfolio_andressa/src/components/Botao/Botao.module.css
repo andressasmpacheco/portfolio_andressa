@@ -6,7 +6,8 @@
     text-align: center;
     text-decoration: none;
     margin-left: 80%;
-    
+    position: fixed;
+    bottom: 10px;
   
    
   }

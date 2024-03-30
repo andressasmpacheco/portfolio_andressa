@@ -1,0 +1,14 @@
+section{
+    width: 100%;
+}
+.imgcertificado{
+    width: 200px;
+    height: 200px;
+    padding: 2%;
+}
+.alura{
+    display: row;
+    padding-top: 5px;
+    padding-left: 40%;
+   
+}

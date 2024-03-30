@@ -1,0 +1,15 @@
+.contatos{
+    display: flex;
+    flex-direction: column;
+    padding:  2% 20%  1%;
+    text-align: justify;
+   
+
+}
+
+span{
+    border-bottom: 2px #000000 solid;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4px;
+}

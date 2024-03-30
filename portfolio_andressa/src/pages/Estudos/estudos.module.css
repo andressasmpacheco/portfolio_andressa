@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    padding: 3vh;
+}
+
+.logosestudos{
+    
+    width: 40%;
+    height: 45%;
+    padding: 0 2vh 0 2vh;
+    
+}
+
+.textoeimagem{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 100px;
+    text-align: justify;
+}
+
+.historia{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+.ti{
+   width: 51%;
+   display: flex;
+   flex-direction: column;
+  
+}
+.tudojunto{
+    display: flex;
+    flex-direction: row;
+}
